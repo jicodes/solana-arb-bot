@@ -17,7 +17,6 @@ import bs58 from "bs58";
 import { AnchorProvider, Program, web3, BN } from "@coral-xyz/anchor";
 import { getAssociatedTokenAddress } from "@solana/spl-token";
 import idl from "./idl/arb_check.json";
-import { start } from "repl";
 
 // === CONFIGURABLE CONSTANTS ===
 const RPC_URL = process.env.RPC_URL || "https://solana-rpc.publicnode.com";
