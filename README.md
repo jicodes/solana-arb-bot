@@ -33,20 +33,19 @@ USDC using Jupiter, and executes profitable round-trip swaps via Jito bundles.
    npm install
    ```
 
-3. **Configure environment variables:** 
-Create a .env file in the root directory with the following content:
+3. **Configure environment variables:** Create a .env file in the root directory
+   with the following content and replace SECRET_KEY with your Solana wallet's
+   private key (in base58 format).
 
    ```
    SECRET_KEY=your_base58_encoded_private_key
    RPC_URL=https://solana-rpc.publicnode.com
    QUOTE_URL=https://api.jup.ag/swap/v1/quote
-   SWAP_INSTRUCTION_URL=https://api.jup.ag/swap/v1/swap-instructions
-   /apiJITO_BUNDLE_URL=https://frankfurt.mainnet.block-engine.jito.wtf/v1/bundles
+   SWAP_INSTRUCTION_URL=https://api.jup.ag/swap/v1/swap-instructions/api
+   JITO_BUNDLE_URL=https://frankfurt.mainnet.block-engine.jito.wtf/v1/bundles
    ```
 
-Replace SECRET_KEY with your Solana wallet's private key (in base58 format).
-
-1. **Run the bot:**
+4. **Run the bot:**
 
    ```sh
    npm start
