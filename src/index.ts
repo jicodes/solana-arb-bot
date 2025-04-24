@@ -17,6 +17,7 @@ import bs58 from "bs58";
 import { AnchorProvider, Program, web3, BN } from "@coral-xyz/anchor";
 import { getAssociatedTokenAddress } from "@solana/spl-token";
 import idl from "./idl/arb_check.json";
+import { start } from "repl";
 
 // === CONFIGURABLE CONSTANTS ===
 const RPC_URL = process.env.RPC_URL || "https://solana-rpc.publicnode.com";
@@ -286,11 +287,6 @@ async function buildAndSendTransaction({
     return;
   }
 
-  // 11. Log summary
-  console.log(`${W_SOL_MINT} - ${USDC_MINT}`);
-  console.log(
-    `slot: ${mergedQuoteResp.contextSlot}, total duration: ${Date.now()}`,
-  );
 }
 
 async function run() {
