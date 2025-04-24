@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/jicodes/solana-arb-bot/issues"
   },
-  "homepage": "https://github.com/jicodes/solana-arb-bot#readme"
+  "homepage": "https://github.com/jicodes/solana-arb-bot#readme",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@solana-developers/helpers": "^2.8.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.1",
+    "@types/node": "^22.14.1",
+    "axios": "^1.8.4",
+    "typescript": "^5.8.3"
+  }
 }
