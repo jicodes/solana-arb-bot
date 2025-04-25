@@ -6,7 +6,7 @@ USDC using Jupiter, and executes profitable round-trip swaps via Jito bundles.
 ## Features
 
 - Fetches swap quotes from Jupiter for WSOL → USDC → WSOL.
-- Calculates potential profit and tips a portion to Jito.
+- Calculates potential profit onchain (see [program](https://github.com/jicodes/solana-arb-check)) and tips a portion to Jito.
 - Builds and signs versioned transactions using Anchor and Solana web3.
 - Sends transactions as bundles to Jito for MEV protection.
 - Runs continuously with a configurable loop interval.
@@ -75,8 +75,7 @@ You can adjust the following constants in `src/index.ts`:
 ## Notes
 
 - Ensure your wallet has enough SOL for fees and swaps.
-- Use at your own risk. This bot interacts with mainnet and may incur losses if
-  not configured properly.
+- Use at your own risk. This bot interacts with mainnet and may incur losses if not configured properly.
 - For development, test on Solana devnet and with small amounts.
 
 ## License
