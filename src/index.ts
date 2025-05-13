@@ -16,7 +16,8 @@ import { Buffer } from "buffer";
 import bs58 from "bs58";
 import { AnchorProvider, Program, web3, BN } from "@coral-xyz/anchor";
 import { getAssociatedTokenAddress } from "@solana/spl-token";
-import idl from "./idl/arb_check.json";
+import idl from "./idl/arbcheck.json";
+import { Arbcheck } from "./types/arbcheck";
 
 // === CONFIGURABLE CONSTANTS ===
 const RPC_URL = process.env.RPC_URL || "https://solana-rpc.publicnode.com";
@@ -75,7 +76,7 @@ const wallet = {
 
 const connection = new Connection(RPC_URL, "processed");
 const provider = new AnchorProvider(connection, wallet);
-const program = new Program(idl as any, provider);
+const program = new Program(idl as Arbcheck, provider);
 
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -285,7 +286,6 @@ async function buildAndSendTransaction({
     console.error("Error sending bundle:", e);
     return;
   }
-
 }
 
 async function run() {
