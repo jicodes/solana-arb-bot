@@ -3,6 +3,8 @@
 A Solana arbitrage trading bot that monitors price differences between WSOL and
 USDC using Jupiter, and executes profitable round-trip swaps via Jito bundles.
 
+![diagram](diagram.jpeg)
+
 ## Features
 
 - Fetches swap quotes from Jupiter for WSOL → USDC → WSOL.
