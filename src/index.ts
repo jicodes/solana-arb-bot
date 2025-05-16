@@ -34,7 +34,7 @@ const PROFIT_THRESHOLD = 3000;
 const TIP_RATE = 0.5; // 50% of profit
 const LOOP_INTERVAL_MS = 200;
 const ARB_CHECK_PROGRAM_ID = new PublicKey(
-  "Arb11111111111111111111111111111111111111111",
+  "7xNxrvV9454Eo9whXXkXdKEVoMsw2V9sEiQPkpNiYAxx",
 ); // <-- Replace with arb check program ID
 
 const JITO_TIP_ACCOUNT = new PublicKey(
